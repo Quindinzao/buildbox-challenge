@@ -45,7 +45,7 @@ const Home: React.FC = () => {
   // Cria mensagem
   const handleCreateMessageUser = async () => {
     if (message !== '')
-      await api.post('/users', { image: image, name: name, message: message })
+      await api.post('/users', { image: preview, name: name, message: message })
   }
 
   // Deleta mensagem

@@ -36,7 +36,7 @@ const Comments: React.FC<CommentsProps> = ({
         <ColumnImage>
           <Image>
             {image !== null
-              ? <img src={image} alt='landscape' />
+              ? <img src={image} alt='landscape' height={88} width={88} style={{ borderRadius: 36 }} />
               : <img src='/landscape.svg' alt='landscape' />
             }
           </Image>
